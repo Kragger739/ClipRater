@@ -16,10 +16,30 @@ body {
     margin: 0px 18px;
 }
 
+.navBar>ul>li>a:hover {}
+
 a {
     text-decoration: none;
     color: var(--accentColor);
     font-size: 18px;
+}
+
+h1 {
+    color: var(--accentColor);
+    font-size: 128px;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playButton {
+    font-size: 32px;
+    margin-top: 18px;
 }
 
 .navBar {
