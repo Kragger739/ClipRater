@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Monsterrat";
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --headerFont: "Monsterrat", sans-serif;
+    --bodyFont: "Roboto", sans-serif;
+    --bodyColor: #051C2C;
+    --accentColor: #00E5D9;
+}

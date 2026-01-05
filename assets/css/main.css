@@ -1,0 +1,30 @@
+@import url("reset.css");
+@import url(variables.css);
+
+body {
+    font-family: var(--bodyFont);
+    background: var(--bodyColor);
+}
+
+.navBar>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar>ul>li {
+    margin: 0px 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accentColor);
+    font-size: 18px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    font-family: var(--headerFont);
+    padding-top: 18px;
+}
