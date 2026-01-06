@@ -1,0 +1,19 @@
+.signupForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.signupForm>.button {
+    grid-column: 1 / -1;
+    justify-self: center;
+}

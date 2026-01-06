@@ -4,10 +4,10 @@
 body {
     font-family: var(--bodyFont);
     background: var(--bodyColor);
+    height: 100vh;
 }
 
 .navBar>ul {
-    list-style: none;
     display: flex;
     justify-content: center;
 }
@@ -16,7 +16,9 @@ body {
     margin: 0px 18px;
 }
 
-.navBar>ul>li>a:hover {}
+.navBar>ul>li>a:hover {
+    transition: 2s;
+}
 
 a {
     text-decoration: none;
@@ -47,4 +49,22 @@ main {
     justify-content: center;
     font-family: var(--headerFont);
     padding-top: 18px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+    font-family: var(--headerFont);
+    padding-bottom: 18px;
+}
+
+footer>ul>li {
+    margin: 0px 18px;
 }
