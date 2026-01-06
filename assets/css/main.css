@@ -5,6 +5,7 @@ body {
     font-family: var(--bodyFont);
     background: var(--bodyColor);
     height: 100vh;
+    color: var(--accentColor);
 }
 
 .navBar>ul {
@@ -23,12 +24,14 @@ body {
 a {
     text-decoration: none;
     color: var(--accentColor);
+    font-family: var(--bodyFont);
     font-size: 18px;
 }
 
 h1 {
     color: var(--accentColor);
     font-size: 128px;
+    font-family: var(--bodyFont);
 }
 
 main {
@@ -42,6 +45,9 @@ main {
 .playButton {
     font-size: 32px;
     margin-top: 18px;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-weight: 700;
 }
 
 .navBar {
@@ -67,4 +73,12 @@ footer>ul {
 
 footer>ul>li {
     margin: 0px 18px;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(0, 299, 217, 0.1), rgba(80, 36, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(18, 18, 18, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

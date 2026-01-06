@@ -4,13 +4,13 @@
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+    font-family: "seoge-ui";
+    src: url("https://use.typekit.net/pcw5ryu.css");
 }
 
 :root {
     --headerFont: "Monsterrat", sans-serif;
-    --bodyFont: "Roboto", sans-serif;
+    --bodyFont: "segoe-ui", sans-serif;
     --bodyColor: #051C2C;
     --accentColor: #00E5D9;
 }

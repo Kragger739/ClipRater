@@ -8,6 +8,30 @@ function getAllSlides() {
 document.querySelector(".slider__button--left").addEventListener("click", moveLeft);
 document.querySelector(".slider__button--right").addEventListener("click", moveRight);
 
+const pauseBtn = document.querySelector(".slider__button--pause");
+// simple autoplay every 3 seconds
+let autoplayId = setInterval(moveRight, 3000);
+
+if (pauseBtn) {
+    pauseBtn.addEventListener("click", () => {
+        if (autoplayId) {
+            clearInterval(autoplayId);
+            autoplayId = null;
+            pauseBtn.classList.remove("fa-solid")
+            pauseBtn.classList.remove("fa-pause")
+            pauseBtn.classList.add("fa-solid")
+            pauseBtn.classList.add("fa-play")
+        } else {
+            pauseBtn.classList.remove("fa-solid")
+            pauseBtn.classList.remove("fa-play")
+            pauseBtn.classList.add("fa-solid")
+            pauseBtn.classList.add("fa-pause")
+            autoplayId = setInterval(moveRight, 3000);
+
+        }
+    });
+}
+
 const allSlides = getAllSlides();
 let currentSlide = allSlides.length - allSlides.length + 1;
 
@@ -25,14 +49,12 @@ function moveRight() {
     slider.append(allSlides[0]);
 
     changeCurrentSlide("right");
-    updateDesc();
 };
 
 function moveLeft() {
     const allSlides = getAllSlides();
     slider.prepend(allSlides[allSlides.length - 1]);
     changeCurrentSlide("left");
-    updateDesc();
 };
 
 function changeCurrentSlide(direction) {
@@ -45,11 +67,3 @@ function changeCurrentSlide(direction) {
     };
 };
 
-function updateDesc() {
-    const allSlides = getAllSlides();
-    document.querySelector(".slider__legend-title").innerText = `Current Slide: ${currentSlide}`;
-    const desc = allSlides[0].querySelector("img").alt;
-    document.querySelector(".slider__legend-text").innerText = desc;
-};
-
-updateDesc();

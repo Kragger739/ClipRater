@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/play.css">
     <script defer src="/assets/js/slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -42,20 +45,11 @@
             <div class="slides__slide">
                 <img src="https://picsum.photos/800/450?random=7" alt="no Desc loaded" class="slider__slide-image">
             </div>
-            <div class="slider__controls">
-                <button class="slier__button slider__button--left">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <button class="slier__button slider__button--right">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-            </div>
+        </div>
+        <div class="slider__controls">
+            <i class="fa-solid fa-arrow-left slider__button slider__button--left"></i>
+            <i class="fa-solid fa-pause slider__button--pause"></i>
+            <i class="fa-solid fa-arrow-right slider__button slider__button--right"></i>
         </div>
     </main>
     <footer>
