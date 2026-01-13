@@ -8,8 +8,13 @@ async function getData() {
 
     leaderboard.innerHTML = ""
 
+    const sortedUsers = [...data].sort(
+        (a, b) => b.userRating - a.userRating
+    );
 
-    data.forEach(entry => {
+
+
+    sortedUsers.forEach(entry => {
 
         const leaderboardEntry = document.createElement("figcaption")
 
