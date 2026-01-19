@@ -1,24 +1,25 @@
 async function getData() {
-    const response = await fetch("users.json")
-    const data = await response.json();
 
-    console.log(data)
+    try {
+        const response = await fetch("users.json")
+        const data = await response.json();
 
-    const leaderboard = document.querySelector(".leaderboard2")
+        console.log(data)
 
-    leaderboard.innerHTML = ""
+        const leaderboard = document.querySelector(".leaderboard2")
 
-    const sortedUsers = [...data].sort(
-        (a, b) => b.userRating - a.userRating
-    );
+        leaderboard.innerHTML = ""
+
+        const sortedUsers = [...data].sort(
+            (a, b) => b.userRating - a.userRating
+        );
 
 
+        sortedUsers.forEach(entry => {
 
-    sortedUsers.forEach(entry => {
+            const leaderboardEntry = document.createElement("figcaption")
 
-        const leaderboardEntry = document.createElement("figcaption")
-
-        const template = `
+            const template = `
         <figcaption class="userCard">
         <img src="${entry.userImg}" alt="profile Image">
         <h2>${entry.username}</h2>
@@ -26,9 +27,12 @@ async function getData() {
         </figcaption>
         `
 
-        leaderboardEntry.innerHTML = template
-        leaderboard.append(leaderboardEntry)
-    });
+            leaderboardEntry.innerHTML = template
+            leaderboard.append(leaderboardEntry)
+        });
+    } catch (error) {
+        console.error(error)
+    }
 }
 
 getData();
