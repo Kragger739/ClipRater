@@ -1,3 +1,5 @@
+@import url("main.css");
+
 .signupForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,5 +17,36 @@
 
 .signupForm>.button {
     grid-column: 1 / -1;
-    justify-self: center;
+    justify-self: stretch;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--accentColor);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.error-message {
+    color: red;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgba(225, 36, 36, 0.26), rgba(225, 36, 36, 0.089));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(18, 18, 18, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 100px;
 }

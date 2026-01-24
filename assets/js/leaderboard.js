@@ -1,3 +1,5 @@
+const leaderboard = document.querySelector(".leaderboard2")
+
 async function getData() {
 
     try {
@@ -6,7 +8,6 @@ async function getData() {
 
         console.log(data)
 
-        const leaderboard = document.querySelector(".leaderboard2")
 
         leaderboard.innerHTML = ""
 
@@ -20,11 +21,11 @@ async function getData() {
             const leaderboardEntry = document.createElement("figcaption")
 
             const template = `
-        <figcaption class="userCard">
-        <img src="${entry.userImg}" alt="profile Image">
-        <h2>${entry.username}</h2>
-        <h2>${entry.userRating}</h2>
-        </figcaption>
+            <figcaption class="userCard">
+            <img src="${entry.userImg}" alt="profile Image">
+            <h2>${entry.username}</h2>
+            <h2>${entry.userRating}</h2>
+            </figcaption>
         `
 
             leaderboardEntry.innerHTML = template
