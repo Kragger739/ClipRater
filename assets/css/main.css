@@ -30,7 +30,9 @@ a {
 
 h1 {
     color: var(--accentColor);
-    font-size: 128px;
+    /* font-size: 128px; */
+    font-size: clamp(3rem, 12vw, 10rem);
+    line-height: 1.02;
     font-family: var(--bodyFont);
 }
 
@@ -82,4 +84,9 @@ footer>ul>li {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(18, 18, 18, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.imprintSection{
+    margin-left: 10px;
+    margin-right: 10px;
 }
