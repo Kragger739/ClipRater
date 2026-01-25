@@ -23,6 +23,17 @@
     color: var(--accentColor);
     font-size: 18px;
     margin-bottom: 25px;
+    background: linear-gradient(135deg, rgba(0, 299, 217, 0.1), rgba(80, 36, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(18, 18, 18, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.signupForm>.button:hover {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(0, 299, 217, 0.3), rgba(80, 36, 225, 0.2));
+    font-size: 20px;
 }
 
 .error-message {
