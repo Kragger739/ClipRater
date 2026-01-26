@@ -22,6 +22,7 @@
 
 .slider__controls {
     margin-top: 18px;
+    margin-bottom: 9px;
 }
 
 iframe {
@@ -31,6 +32,17 @@ iframe {
     float: left;
     border: 0;
     aspect-ratio: 16/9;
+}
+
+.fa-star:hover {
+    transition: all 0.3s ease;
+    font-size: 42px;
+}
+
+.rateControls {
+    padding-top: 9px;
+    height: 50px;
+    font-size: 36px;
 }
 
 /* @media (max-width: 450px) {

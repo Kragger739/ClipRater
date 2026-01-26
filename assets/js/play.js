@@ -7,6 +7,8 @@ function getAllSlides() {
     return document.querySelectorAll(".slides__slide");
 };
 
+const starsArray = Array.from(stars);
+
 document.querySelector(".slider__button--left").addEventListener("click", moveLeft);
 document.querySelector(".slider__button--right").addEventListener("click", moveRight);
 
@@ -76,7 +78,7 @@ function changeCurrentSlide(direction) {
 
 function changeStarState(e) {
     const clickedStar = e.target;
-    const clickedIndex = Array.from(stars).indexOf(clickedStar);
+    const clickedIndex = starsArray.indexOf(clickedStar);
 
     stars.forEach((star, index) => {
         if (index <= clickedIndex) {
@@ -86,6 +88,7 @@ function changeStarState(e) {
             star.classList.add("fa-regular");
             star.classList.remove("fa-solid");
         }
-    });
+    })
+
 }
 
