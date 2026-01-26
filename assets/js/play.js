@@ -113,8 +113,6 @@ function createFrames() {
 
 }
 
-createFrames()
-
 function onPlayerReady(event) {
     event.target.setVolume(5)
     // event.target.playVideo();
@@ -126,4 +124,8 @@ function onPlayerStateChange(event) {
         moveRight()
     }
 
+}
+
+function onYouTubeIframeAPIReady() {
+    createFrames();
 }
