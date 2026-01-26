@@ -34,6 +34,10 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+.fa-star {
+    transition: all 0.3s ease;
+}
+
 .fa-star:hover {
     transition: all 0.3s ease;
     font-size: 42px;
