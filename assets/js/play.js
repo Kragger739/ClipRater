@@ -2,6 +2,8 @@ const slider = document.querySelector(".slider");
 
 const stars = document.querySelectorAll(".fa-star")
 
+const clips = ["ZV2WvJywqYU", "FYveFPaixRM", "6rDx7oeFnWg", "OcKHnu9d7JA", "dTyoOU82R38"]
+
 
 function getAllSlides() {
     return document.querySelectorAll(".slides__slide");
@@ -91,4 +93,37 @@ function changeStarState(e) {
     })
 
 }
+var player
+const players = []
+const numOfClips = clips.length
 
+function createFrames() {
+    for (let i = 0; i < numOfClips; i++) {
+        player = new YT.Player('player' + i, {
+            height: '390',
+            width: '640',
+            videoId: clips[i],
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+            }
+        });
+        players.push(player);
+    }
+
+}
+
+createFrames()
+
+function onPlayerReady(event) {
+    event.target.setVolume(5)
+    // event.target.playVideo();
+}
+
+//TODO: Make skip to new Video when video has ended
+function onPlayerStateChange(event) {
+    if (event.data === 0) {
+        moveRight()
+    }
+
+}
