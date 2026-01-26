@@ -6,11 +6,9 @@
     background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 600px;
 }
 
-/* Individual User Card */
 .userCard {
     display: flex;
     align-items: center;
@@ -30,7 +28,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Image */
+/* Profile picture */
 .userCard img {
     width: 50px;
     height: 50px;
@@ -41,7 +39,7 @@
     flex-shrink: 0;
 }
 
-/* Username (first h2 - left side after image) */
+/* username */
 .userCard h2:first-of-type {
     color: #ffffff;
     font-size: 1.3rem;
@@ -54,7 +52,7 @@
     overflow: hidden;
 }
 
-/* Points (second h2 - right side) */
+/* Points */
 .userCard h2:nth-of-type(2) {
     color: var(--accentColor);
     font-size: 1.4rem;

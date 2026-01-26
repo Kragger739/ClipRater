@@ -37,6 +37,7 @@ iframe {
 .fa-star:hover {
     transition: all 0.3s ease;
     font-size: 42px;
+    text-shadow: 0 0 10px rgba(0, 299, 217, 0.5);
 }
 
 .rateControls {
