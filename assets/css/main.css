@@ -18,7 +18,9 @@ body {
 }
 
 .navBar>ul>li>a:hover {
-    transition: 2s;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 299, 217, 0.5);
+    font-size: 20px;
 }
 
 a {
@@ -86,11 +88,11 @@ footer>ul>li {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.imprintSection{
+.imprintSection {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.animationContainer{
+.animationContainer {
     display: flex;
 }
