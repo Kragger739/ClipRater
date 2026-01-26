@@ -1,5 +1,7 @@
 const slider = document.querySelector(".slider");
 
+const stars = document.querySelectorAll(".fa-star")
+
 
 function getAllSlides() {
     return document.querySelectorAll(".slides__slide");
@@ -9,7 +11,7 @@ document.querySelector(".slider__button--left").addEventListener("click", moveLe
 document.querySelector(".slider__button--right").addEventListener("click", moveRight);
 
 const pauseBtn = document.querySelector(".slider__button--pause");
-// simple autoplay every 3 seconds
+
 let autoplayId = setInterval(moveRight, 3000);
 
 if (pauseBtn) {
@@ -43,6 +45,10 @@ window.addEventListener("keydown", (event) => {
     }
 })
 
+stars.forEach(star => {
+    star.addEventListener("click", changeStarState);
+});
+
 
 function moveRight() {
     const allSlides = getAllSlides();
@@ -66,4 +72,20 @@ function changeCurrentSlide(direction) {
         currentSlide === 1 ? (currentSlide = allSlides.length) : currentSlide--;
     };
 };
+
+
+function changeStarState(e) {
+    const clickedStar = e.target;
+    const clickedIndex = Array.from(stars).indexOf(clickedStar);
+
+    stars.forEach((star, index) => {
+        if (index <= clickedIndex) {
+            star.classList.remove("fa-regular");
+            star.classList.add("fa-solid");
+        } else {
+            star.classList.add("fa-regular");
+            star.classList.remove("fa-solid");
+        }
+    });
+}
 

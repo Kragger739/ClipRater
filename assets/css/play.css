@@ -32,3 +32,13 @@ iframe {
     border: 0;
     aspect-ratio: 16/9;
 }
+
+/* @media (max-width: 450px) {
+    .slider {
+        aspect-ratio: 9/16;
+    }
+
+    iframe {
+        aspect-ratio: 9/16;
+    }
+} */
