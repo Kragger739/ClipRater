@@ -23,7 +23,7 @@ function validateForm(event) {
 
     if (!data.salutation) {
         valErrors.salutation = "Salutation is required";
-    } else if (data.salutation.lenght <= 2) {
+    } else if (data.salutation.length <= 2) {
         valErrors.salutation = "Salutation must be at least 2 characters long";
     } else if (injectRegex.test(data.salutation)) {
         valErrors.salutation = "invalid input"
@@ -31,7 +31,7 @@ function validateForm(event) {
 
     if (!data.firstName) {
         valErrors.firstName = "First name is required";
-    } else if (data.firstName.lenght <= 2) {
+    } else if (data.firstName.length <= 2) {
         valErrors.firstName = "First name must be at least 3 characters long";
     } else if (injectRegex.test(data.firstName)) {
         valErrors.firstName = "invalid input"
@@ -39,7 +39,7 @@ function validateForm(event) {
 
     if (!data.lastName) {
         valErrors.lastName = "Last name is required";
-    } else if (data.lastName.lenght <= 2) {
+    } else if (data.lastName.length <= 2) {
         valErrors.lastName = "Last name must be at least 3 characters long";
     } else if (injectRegex.test(data.lastName)) {
         valErrors.lastName = "invalid input"
@@ -53,7 +53,7 @@ function validateForm(event) {
         const emailRegex = /^[^\s@;:,"`]+@[^\s@;:,"`]+\.[^\s@;:,"`]+$/;
         if (!emailRegex.test(data.email)) {
             valErrors.email = "invalid email address"
-        } else if (!injectRegex.test(data.email)) {
+        } else if (injectRegex.test(data.email)) {
             valErrors.email = "invalid input"
         }
     }
