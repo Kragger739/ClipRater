@@ -12,7 +12,7 @@ article {
 
 .infoCard {
     aspect-ratio: 16/9;
-    height: 200px;
+    height: clamp(140px, 16vw, 200px);
 
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -56,4 +56,19 @@ h2 {
 p {
     grid-column: span 2 / span 2;
     text-align: center;
+}
+
+@media (max-width: 780px) {
+    article {
+        flex-direction: column;
+    }
+
+    .infoCard {
+
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        height: 200px;
+    }
+
 }
