@@ -36,11 +36,11 @@ a {
 
 h1 {
     color: var(--accentColor);
-    /* font-size: 128px; */
     font-size: clamp(3rem, 12vw, 10rem);
     line-height: 1.02;
     font-family: var(--bodyFont);
 }
+
 
 main {
     height: 80vh;
