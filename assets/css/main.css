@@ -4,7 +4,7 @@
 body {
     font-family: var(--bodyFont);
     background: var(--bodyColor);
-    height: 100vh;
+    /* height: 100vh; */
     color: var(--accentColor);
 }
 
@@ -43,11 +43,16 @@ h1 {
 
 
 main {
-    height: 80vh;
+    min-height: auto;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.heroSection {
+    height: 80vh;
 }
 
 .playButton {

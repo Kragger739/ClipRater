@@ -1,3 +1,8 @@
+main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .leaderboard {
     width: 90%;
     max-width: 800px;
@@ -6,7 +11,8 @@
     background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    min-height: 600px;
+    margin-bottom: 36px;
+    margin-top: 36px;
 }
 
 .userCard {
@@ -71,7 +77,6 @@
     .leaderboard {
         width: 95%;
         padding: 15px;
-        min-height: 500px;
     }
 
     .userCard {
@@ -94,27 +99,4 @@
         padding: 6px 12px;
         margin-left: 15px;
     }
-}
-
-.leaderboard {
-    max-height: 800px;
-    overflow-y: auto;
-}
-
-.leaderboard::-webkit-scrollbar {
-    width: 8px;
-}
-
-.leaderboard::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-}
-
-.leaderboard::-webkit-scrollbar-thumb {
-    background: #4cc9f0;
-    border-radius: 4px;
-}
-
-.leaderboard::-webkit-scrollbar-thumb:hover {
-    background: #3aa8c9;
 }

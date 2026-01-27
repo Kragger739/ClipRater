@@ -1,4 +1,4 @@
-const leaderboard = document.querySelector(".leaderboard2")
+const leaderboard = document.querySelector(".leaderboard")
 
 async function getData() {
 
