@@ -1,4 +1,13 @@
-document.querySelector(".button").addEventListener("click", validateForm);
+let valErrors = {};
+
+let profile = [];
+
+const username = document.querySelector("#username")
+
+document.querySelector(".button").addEventListener("click", (event) => {
+    validateForm(event);
+    saveData();
+});
 
 document.querySelector(".signupForm").addEventListener("focusout", validateForm)
 
@@ -9,9 +18,9 @@ function validateForm(event) {
     clearErrors();
 
     let data = {}
-    let valErrors = {}
+    valErrors = {};
 
-    data.username = document.querySelector("#username").value;
+    data.username = username.value;
     data.password = document.querySelector("#password").value;
     data.email = document.querySelector("#email").value;
 
@@ -77,4 +86,29 @@ function clearErrors() {
         element.remove()
     }
     )
+}
+
+function saveData() {
+    const savedUsername = localStorage.getItem("profile")
+
+    if (Object.keys(valErrors).length === 0) {
+        const newEntry = username.value.trim()
+        console.log("Trying to save Data...")
+
+        if (newEntry !== "") {
+            const profileData = {
+                username: newEntry
+            }
+            if (savedUsername === null) {
+                profile.push(profileData)
+                localStorage.setItem("profile", JSON.stringify(profile))
+                console.log("%c✅ New profile saved!", "color: #22c55e; font-weight: bold; font-size: 14px;")
+            } else {
+                console.error(console.error("⚠️ Profile already exists"))
+            }
+
+        }
+
+
+    }
 }
