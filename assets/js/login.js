@@ -9,89 +9,46 @@ function validateForm(event) {
     clearErrors();
 
     let data = {}
-
     let valErrors = {}
 
-    data.salutation = document.querySelector("#salutation").value;
-    data.firstName = document.querySelector("#firstName").value;
-    data.lastName = document.querySelector("#lastName").value;
+    data.username = document.querySelector("#username").value;
+    data.password = document.querySelector("#password").value;
     data.email = document.querySelector("#email").value;
-    data.region = document.querySelector("#region").value;
-    data.city = document.querySelector("#city").value;
-    data.address = document.querySelector("#address").value;
-    data.plz = document.querySelector("#plz").value;
 
-    if (!data.salutation) {
-        valErrors.salutation = "Salutation is required";
-    } else if (data.salutation.length <= 2) {
-        valErrors.salutation = "Salutation must be at least 2 characters long";
-    } else if (injectRegex.test(data.salutation)) {
-        valErrors.salutation = "invalid input"
-    }
+    const triggerField = event.target.id;
 
-    if (!data.firstName) {
-        valErrors.firstName = "First name is required";
-    } else if (data.firstName.length <= 2) {
-        valErrors.firstName = "First name must be at least 3 characters long";
-    } else if (injectRegex.test(data.firstName)) {
-        valErrors.firstName = "invalid input"
-    }
-
-    if (!data.lastName) {
-        valErrors.lastName = "Last name is required";
-    } else if (data.lastName.length <= 2) {
-        valErrors.lastName = "Last name must be at least 3 characters long";
-    } else if (injectRegex.test(data.lastName)) {
-        valErrors.lastName = "invalid input"
-    }
-
-
-
-    if (!data.email) {
-        valErrors.email = "email is required";
-    } else {
-        const emailRegex = /^[^\s@;:,"`]+@[^\s@;:,"`]+\.[^\s@;:,"`]+$/;
-        if (!emailRegex.test(data.email)) {
-            valErrors.email = "invalid email address"
-        } else if (injectRegex.test(data.email)) {
-            valErrors.email = "invalid input"
+    if (triggerField === "username" || event.type === "click") {
+        if (!data.username) {
+            valErrors.username = "Username is required";
+        } else if (data.username.length <= 2) {
+            valErrors.username = "Username must be at least 3 characters long";
+        } else if (injectRegex.test(data.username)) {
+            valErrors.username = "invalid input"
         }
     }
 
-    if (!data.region) {
-        valErrors.region = "region is required";
-    } else {
-        if (injectRegex.test(data.region)) {
-            valErrors.region = "invalid input"
+    if (triggerField === "password" || event.type === "click") {
+        if (!data.password) {
+            valErrors.password = "Password is required";
+        } else if (data.password.length <= 2) {
+            valErrors.password = "Password must be longer than 3 characters";
+        } else if (injectRegex.test(data.password)) {
+            valErrors.password = "invalid input"
         }
     }
 
 
-    if (!data.city) {
-        valErrors.city = "City is required";
-    } else {
-        if (injectRegex.test(data.city)) {
-            valErrors.city = "invalid input"
-        }
-    }
 
-
-    if (!data.address) {
-        valErrors.address = "address is required";
-    } else {
-        if (injectRegex.test(data.address)) {
-            valErrors.address = "invalid input"
-        }
-    }
-
-    if (!data.plz) {
-        valErrors.plz = "plz is required";
-    } else {
-        const plzRegex = /^\d{4}$/;
-        if (!plzRegex.test(data.plz)) {
-            valErrors.plz = "invalid plz"
-        } else if (injectRegex.test(data.plz)) {
-            valErrors.plz = "invalid input"
+    if (triggerField === "email" || event.type === "click") {
+        if (!data.email) {
+            valErrors.email = "email is required";
+        } else {
+            const emailRegex = /^[^\s@;:,"`]+@[^\s@;:,"`]+\.[^\s@;:,"`]+$/;
+            if (!emailRegex.test(data.email)) {
+                valErrors.email = "invalid email address"
+            } else if (injectRegex.test(data.email)) {
+                valErrors.email = "invalid input"
+            }
         }
     }
 

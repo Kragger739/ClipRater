@@ -49,6 +49,11 @@
     text-align: center;
 }
 
+.username {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+}
+
 input {
     height: 25px;
     border-radius: 5px;
