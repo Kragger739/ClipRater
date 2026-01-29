@@ -90,6 +90,37 @@ footer {
     transform: translate(-50%, -50%);
 }
 
+.floatingCard {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 80px;
+    width: 20vw;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.floatingCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.floatingCard>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4cc9f0;
+    flex-shrink: 0;
+}
+
 footer>ul {
     display: flex;
     justify-content: center;

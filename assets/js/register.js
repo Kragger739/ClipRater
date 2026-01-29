@@ -102,9 +102,9 @@ function saveData() {
             if (savedUsername === null) {
                 profile.push(profileData)
                 localStorage.setItem("profile", JSON.stringify(profile))
-                console.log("%c✅ New profile saved!", "color: #22c55e; font-weight: bold; font-size: 14px;")
+                console.log("%c New profile saved!", "color: #22c55e; font-weight: bold; font-size: 14px;")
             } else {
-                console.error(console.error("⚠️ Profile already exists"))
+                console.log("%c Profile already exists", "color: #c52222; font-weight: bold; font-size: 14px;")
             }
 
         }
