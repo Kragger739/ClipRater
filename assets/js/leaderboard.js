@@ -5,8 +5,6 @@ async function getData() {
         const response = await fetch("users.json")
         const data = await response.json();
 
-        console.log(data)
-
         leaderboard.innerHTML = ""
 
         const sortedUsers = [...data].sort(
@@ -17,6 +15,8 @@ async function getData() {
         sortedUsers.forEach(entry => {
 
             const leaderboardEntry = document.createElement("figcaption")
+
+            leaderboardEntry.classList.add("actor")
 
             const template = `
             <figcaption class="userCard">
@@ -35,3 +35,12 @@ async function getData() {
 }
 
 getData();
+
+
+
+gsap.from(".leaderboard", {
+    opacity: 0,
+    y: 200,
+    duration: 1,
+    ease: "power2.inOut",
+})
