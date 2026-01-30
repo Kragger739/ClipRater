@@ -156,6 +156,10 @@ footer>ul>li>a:hover {
 .imprintSection {
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    line-height: 20px;
+    margin-top: 32px;
+    text-align: center;
 }
 
 .animationContainer {
