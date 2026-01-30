@@ -165,3 +165,29 @@ footer>ul>li>a:hover {
 .animationContainer {
     display: flex;
 }
+
+.buttons {
+    margin-top: 32px;
+}
+
+@media (max-width: 375px) {
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .floatingCard {
+        display: none;
+    }
+
+}
