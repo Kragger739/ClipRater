@@ -25,6 +25,10 @@ body {
     text-decoration: underline;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .navBar>ul>li>a:hover {
     transition: all 0.3s ease;
     text-shadow: 0 0 10px rgba(0, 299, 217, 0.5);

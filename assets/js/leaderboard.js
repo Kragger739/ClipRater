@@ -16,8 +16,6 @@ async function getData() {
 
             const leaderboardEntry = document.createElement("figcaption")
 
-            leaderboardEntry.classList.add("actor")
-
             const template = `
             <figcaption class="userCard">
             <img src="${entry.userImg}" alt="profile Image">
