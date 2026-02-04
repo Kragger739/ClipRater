@@ -4,12 +4,18 @@ let profile = [];
 
 const username = document.querySelector("#username")
 
+const form = document.querySelector(".signupForm")
+
+const mainContent = document.querySelector("main")
+
+const successAudio = new Audio("assets/sounds/success.mp3");
+
 document.querySelector(".button").addEventListener("click", (event) => {
     validateForm(event);
     saveData();
 });
 
-document.querySelector(".signupForm").addEventListener("focusout", validateForm)
+form.addEventListener("focusout", validateForm)
 
 
 function validateForm(event) {
@@ -109,6 +115,24 @@ function saveData() {
 
         }
 
+        succesAnimation()
+        loadAccount()
+    }
+}
 
+function succesAnimation() {
+
+    if (Object.keys(valErrors).length === 0) {
+        mainContent.innerHTML = `
+        <h1 class="successText">SUCCESS</h1>
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+        <a href="play.html">Play anyways</a>
+        <p>* All these fields are required</p>`
+        gsap.from("h1", { opacity: 0, duration: 1, ease: "power2.inOut" })
+        successAudio.volume = 0.1;
+        successAudio.play()
     }
 }

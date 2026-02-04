@@ -1,11 +1,10 @@
-let currentAccount = []
-
-currentAccount = JSON.parse(localStorage.getItem("profile"))
-
 loadAccount()
 
 
 function loadAccount() {
+    let currentAccount = []
+
+    currentAccount = JSON.parse(localStorage.getItem("profile"))
 
     const profileContainer = document.querySelector("body")
 
