@@ -131,3 +131,7 @@ p {
     color: #7ac142;
     margin-bottom: 25px;
 }
+
+.required {
+    color: #A52A2A;
+}
