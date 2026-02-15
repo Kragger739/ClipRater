@@ -50,12 +50,20 @@ iframe {
     font-size: 36px;
 }
 
-/* @media (max-width: 450px) {
+.error{
+        display: none;
+}
+
+ @media (max-width: 800px) {
     .slider {
-        aspect-ratio: 9/16;
+        display: none;
     }
 
-    iframe {
-        aspect-ratio: 9/16;
+    .error{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+        color: red;
+        text-align: center;
     }
-} */
+}

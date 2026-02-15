@@ -35,7 +35,7 @@ function validateForm(event) {
     if (triggerField === "username" || event.type === "click") {
         if (!data.username) {
             valErrors.username = "Username is required";
-        } else if (data.username.length <= 2) {
+        } else if (data.username.length <= 3) {
             valErrors.username = "Username must be at least 3 characters long";
         } else if (injectRegex.test(data.username)) {
             valErrors.username = "invalid input"
@@ -45,7 +45,7 @@ function validateForm(event) {
     if (triggerField === "password" || event.type === "click") {
         if (!data.password) {
             valErrors.password = "Password is required";
-        } else if (data.password.length <= 2) {
+        } else if (data.password.length <= 3) {
             valErrors.password = "Password must be longer than 3 characters";
         } else if (injectRegex.test(data.password)) {
             valErrors.password = "invalid input"

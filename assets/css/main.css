@@ -195,6 +195,19 @@ footer>ul>li>a:hover {
 .infoSection {
     display: flex;
     justify-content: center;
+    align-items: baseline;
+    height: 50vh;
+    font-size: clamp(1rem, 12vw, 1.8rem);
+    line-height: 35px;
 }
 
-.infolabel {}
+.infoSection>p{
+    text-align: center;
+    transform: skew(-14deg);
+    background: linear-gradient(135deg, rgba(0, 299, 217, 0.1), rgba(80, 36, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(18, 18, 18, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 30px 30px;
+}
