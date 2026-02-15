@@ -191,3 +191,10 @@ footer>ul>li>a:hover {
     }
 
 }
+
+.infoSection {
+    display: flex;
+    justify-content: center;
+}
+
+.infolabel {}
