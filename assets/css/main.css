@@ -6,6 +6,7 @@ body {
     background: var(--bodyColor);
     /* height: 100vh; */
     color: var(--accentColor);
+    padding-bottom: 80px;
 }
 
 .navBar>ul {
@@ -181,6 +182,11 @@ footer>ul>li>a:hover {
     a {
         font-size: 15px;
     }
+    .infoSection>p {
+        transform: skew(0deg) !important;
+        background: none;
+    }
+
 
 }
 
@@ -189,7 +195,6 @@ footer>ul>li>a:hover {
     .floatingCard {
         display: none;
     }
-
 }
 
 .infoSection {
@@ -204,7 +209,7 @@ footer>ul>li>a:hover {
 .infoSection>p{
     text-align: center;
     transform: skew(-14deg);
-    background: linear-gradient(135deg, rgba(0, 299, 217, 0.1), rgba(80, 36, 225, 0));
+    background: linear-gradient(135deg, rgba(80, 36, 225, 0), rgba(0, 299, 217, 0.1));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(18, 18, 18, 0.18);
