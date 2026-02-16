@@ -60,6 +60,14 @@ input {
     padding-left: 5px;
 }
 
+input, textarea{
+    background: linear-gradient(135deg, rgba(0, 299, 217, 0.1), rgba(80, 36, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(18, 18, 18, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 textarea {
     border-radius: 5px;
     padding-left: 5px;

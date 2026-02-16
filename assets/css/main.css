@@ -45,7 +45,7 @@ a {
 
 h1 {
     color: var(--accentColor);
-    font-size: clamp(3rem, 12vw, 10rem);
+    font-size: clamp(3rem, 12vw, 10rem) !important;
     line-height: 1.02;
     font-family: var(--bodyFont);
 }
