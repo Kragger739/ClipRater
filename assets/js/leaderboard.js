@@ -19,7 +19,7 @@ async function getData() {
             <figcaption class="userCard">
             <img src="${entry.userImg}" alt="profile Image">
             <h2>${entry.username}</h2>
-            <div class="tags">${entry.tags.toString()}</div>
+            <div class="tags">${entry.tags.map(tag => `<span style="margin-left: 10px;">${tag}</span>`).join('')}</div>
             <h2>${entry.userRating}</h2>
             </figcaption>
         `
