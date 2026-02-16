@@ -15,17 +15,18 @@ async function getData() {
         sortedUsers.forEach(entry => {
 
             const leaderboardEntry = document.createElement("figcaption")
-
             const template = `
             <figcaption class="userCard">
             <img src="${entry.userImg}" alt="profile Image">
             <h2>${entry.username}</h2>
+            <div class="tags">${entry.tags.toString()}</div>
             <h2>${entry.userRating}</h2>
             </figcaption>
         `
 
             leaderboardEntry.innerHTML = template
             leaderboard.append(leaderboardEntry)
+            console.log(entry.tags)
         });
     } catch (error) {
         console.error(error)

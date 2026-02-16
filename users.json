@@ -2,151 +2,181 @@
     {
         "userImg": "https://picsum.photos/800/450?random=143",
         "username": "PlayBoyCarti",
-        "userRating": 143
+        "userRating": 143,
+        "tags": ["Swagger", "Rhythm", "Charisma"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=176",
         "username": "Xx_DarkSlayer_xX",
-        "userRating": 176
+        "userRating": 176,
+        "tags": ["Slayer", "Darkness", "Warrior"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=129",
         "username": "ShadowNinja77",
-        "userRating": 129
+        "userRating": 129,
+        "tags": ["Stealth", "Ninja", "Silent"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=198",
         "username": "ProGamerMLG",
-        "userRating": 198
+        "userRating": 198,
+        "tags": ["Legend", "Competitive", "Victory"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=112",
         "username": "EpicShotzz",
-        "userRating": 112
+        "userRating": 112,
+        "tags": ["Sniper", "Precision", "Epic"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=154",
         "username": "NoScopeKing",
-        "userRating": 154
+        "userRating": 154,
+        "tags": ["Sharpshooter", "King", "Dominator"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=101",
         "username": "CyberGhost",
-        "userRating": 101
+        "userRating": 101,
+        "tags": ["Hacker", "Specter", "Digital"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=189",
         "username": "VoidWalker",
-        "userRating": 189
+        "userRating": 189,
+        "tags": ["Void", "Mystic", "Wanderer"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=135",
         "username": "StealthAssassin",
-        "userRating": 135
+        "userRating": 135,
+        "tags": ["Assassin", "Deadly", "Invisible"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=200",
         "username": "HeadshotHunter",
-        "userRating": 200
+        "userRating": 200,
+        "tags": ["Hunter", "Marksman", "Accuracy"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=118",
         "username": "MechaTitan",
-        "userRating": 118
+        "userRating": 118,
+        "tags": ["Mechanical", "Titan", "Colossus"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=147",
         "username": "NeonBlade",
-        "userRating": 147
+        "userRating": 147,
+        "tags": ["Neon", "Blade", "Warrior"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=132",
         "username": "FrostWarden",
-        "userRating": 132
+        "userRating": 132,
+        "tags": ["Frostbite", "Warden", "Blizzard"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=183",
         "username": "ChaosBringer",
-        "userRating": 183
+        "userRating": 183,
+        "tags": ["Chaos", "Mayhem", "Destruction"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=156",
         "username": "PhoenixRisen",
-        "userRating": 156
+        "userRating": 156,
+        "tags": ["Phoenix", "Reborn", "Immortal"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=115",
         "username": "QuantumLeap",
-        "userRating": 115
+        "userRating": 115,
+        "tags": ["Quantum", "Teleport", "Physics"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=191",
         "username": "BlazeStorm",
-        "userRating": 191
+        "userRating": 191,
+        "tags": ["Inferno", "Thunder", "Raging"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=139",
         "username": "VenomStrike",
-        "userRating": 139
+        "userRating": 139,
+        "tags": ["Venom", "Poison", "Lethal"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=149",
         "username": "Ironclad",
-        "userRating": 149
+        "userRating": 149,
+        "tags": ["Titanium", "Fortress", "Guardian"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=195",
         "username": "Wraith",
-        "userRating": 195
+        "userRating": 195,
+        "tags": ["Phantom", "Ethereal", "Ghostly"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=104",
         "username": "OmegaX",
-        "userRating": 104
+        "userRating": 104,
+        "tags": ["Ultimate", "Omega", "Final"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=158",
         "username": "Spectre",
-        "userRating": 158
+        "userRating": 158,
+        "tags": ["Haunting", "Spectral", "Eerie"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=186",
         "username": "DoomSlayer",
-        "userRating": 186
+        "userRating": 186,
+        "tags": ["Apocalypse", "Destroyer", "Slaying"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=133",
         "username": "CyberPunk2077",
-        "userRating": 133
+        "userRating": 133,
+        "tags": ["Hacker", "Rebel", "Future"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=151",
         "username": "NightHawk",
-        "userRating": 151
+        "userRating": 151,
+        "tags": ["Nocturnal", "Predator", "Swift"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=117",
         "username": "BloodWolf",
-        "userRating": 117
+        "userRating": 117,
+        "tags": ["Savage", "Feral", "Ferocious"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=188",
         "username": "ZeroCool",
-        "userRating": 188
+        "userRating": 188,
+        "tags": ["Chill", "Master", "Zero"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=136",
         "username": "CrimsonDragon",
-        "userRating": 136
+        "userRating": 136,
+        "tags": ["Dragon", "Bloodlust", "Fierce"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=152",
         "username": "GhostFace",
-        "userRating": 152
+        "userRating": 152,
+        "tags": ["Phantom", "Masked", "Terror"]
     },
     {
         "userImg": "https://picsum.photos/800/450?random=199",
         "username": "Spectral",
-        "userRating": 199
+        "userRating": 199,
+        "tags": ["Mystical", "Unearthly", "Transcendent"]
     }
 ]
