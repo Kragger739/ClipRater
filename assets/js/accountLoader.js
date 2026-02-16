@@ -19,7 +19,7 @@ function loadAccount() {
             <img src="https://picsum.photos/320/200?random=42" alt="User avatar">
             <figcaption>
                 <strong>${currentAccount[0].username}</strong><br>
-                <small>Short subtitle</small>
+                <small>Standart User</small>
             </figcaption>
         </figure>`
         console.log("name loaded")
